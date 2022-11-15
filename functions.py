@@ -1,3 +1,4 @@
+from hashlib import new
 import os
 import json
 from typing import List
@@ -59,6 +60,24 @@ def remove_rs(num: str) -> list:
         return [float(num), True]
     except ValueError:
         return [num, False]
+
+def number_formatter(num: int) -> str:
+
+    count = 0
+
+    new_num = ''
+
+    for number in str(num)[::-1]:
+
+        new_num += number
+
+        count += 1
+        
+        if count % 3 == 0 and count < len(str(num)):
+
+            new_num += '.'
+
+    return f'{new_num[::-1]}'
 
 def receive_company_sector() -> list:
 
@@ -622,9 +641,24 @@ def user_says_informations() -> bool:
 
     decorator_text('calculadora de Emissão de Carbono', '=', clean_screen=True)
 
-    print(f'Sua pegada de carbono anual em Toneladas é de: {(annual_emission1 + annual_emission2 + annual_emission3):.3f}')
+    total_annual_emission = annual_emission1 + annual_emission2 + annual_emission3
 
-    input('\nPressione enter para prosseguir... \n')
+    min_value = round(total_annual_emission * 12)
+    
+    max_value = round(total_annual_emission * 365)
+
+
+    print(f'Sua pegada de carbono anual em Toneladas é de: {number_formatter(round(total_annual_emission))}')
+
+    print('\nUm Crédito de Carbono equivale a 1 Tonelada de Carbono.')
+    
+    print(f'\nFazendo as contas, sua empresa terá que comprar {number_formatter(round(total_annual_emission))} Créditos.')
+
+    print('\nO Crédito de Carbono no Brasil varia entre R$12,00 e R$365,00')
+
+    print(f'\nSua empresa terá que gastar em créditos algo em torno de R${number_formatter(min_value)} e R${number_formatter(max_value)}')
+
+    input('\n\033[1;35mPressione enter para prosseguir... \033[m\n')
 
     return False
 
