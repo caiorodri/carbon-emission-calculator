@@ -1,0 +1,112 @@
+{
+    "empresas": [
+        {
+            "nome": "Empresa 1",
+            "estado": "Rio Grande do Sul",
+            "cidade": "Porto Alegre",
+            "dados": {
+                "setor": "Industria",
+                "funcionarios": 25,
+                "gasto combustivel": 645.120,
+                "combustivel": "Diesel",
+                "gasto energia": 7000,
+                "energia solar": "Não",
+                "distribuicao funcionarios": "Majoritariamente presencial",
+                "vendas frete": 100, 
+                "peso frete": 16000,
+                "localizacao consumidor": 25, 
+                "co2 emitido": 3000.504
+            }
+        },
+        {
+            "nome": "Empresa 2",
+            "estado": "Nova Iguaçu",
+            "cidade": "São Paulo",
+            "dados": {
+                "setor": "Varejo",
+                "funcionarios": 100,
+                "gasto combustivel": 1510110,
+                "combustivel": "Gás Natural",
+                "gasto energia": 22000,
+                "energia solar": "Sim, faço gereção propria",
+                "distribuicao funcionarios": "Majoritariamente presencial",
+                "vendas frete": 750, 
+                "peso frete": 0,
+                "localizacao consumidor": 125, 
+                "co2 emitido": 10224.823
+            }
+        },
+        {
+            "nome": "Empresa 3",
+            "estado": "São Paulo",
+            "cidade": "São Paulo",
+            "setor": "Serviços",
+            "dados": {
+                "funcionarios": 55,
+                "gasto combustivel": 130220,
+                "combustivel": "Etanol",
+                "gasto energia": 10500,
+                "energia solar": "Sim, compro de uma fazenda solar",
+                "distribuicao funcionarios": "Hibrido",
+                "vendas frete": 0, 
+                "peso frete": 0,
+                "localizacao consumidor": 0, 
+                "co2 emitido": 17.193
+            }
+        },
+        {
+            "nome": "Empresa 4",
+            "estado": "São Paulo",
+            "cidade": "Barueri",
+            "setor": "Industria",
+            "dados": {
+                "funcionarios": 250,
+                "gasto combustivel": 2480210,
+                "combustivel": "Gasolina",
+                "gasto energia": 10500,
+                "energia solar": "Não",
+                "distribuicao funcionarios": "Majoritariamente presencial",
+                "vendas frete": 1500, 
+                "peso frete": 22000,
+                "localizacao consumidor": 125, 
+                "co2 emitido": 22582.588
+            }
+        },
+        {
+            "nome": "Empresa 5",
+            "estado": "Bahia",
+            "cidade": "Salvador",
+            "setor": "Varejo",
+            "dados": {
+                "funcionarios": 11,
+                "gasto combustivel": 54000,
+                "combustivel": "Etanol",
+                "gasto energia": 3500,
+                "energia solar": "Não",
+                "distribuicao funcionarios": "Majoritariamente presencial",
+                "vendas frete": 100, 
+                "peso frete": 0,
+                "localizacao consumidor": 25, 
+                "co2 emitido": 9.213
+            }
+        },
+        {
+            "nome": "Empresa 6",
+            "estado": "Serjipe",
+            "cidade": "Aracaju",
+            "setor": "Serviços",
+            "dados": {
+                "funcionarios": 100,
+                "gasto combustivel": 7150,
+                "combustivel": "Diesel",
+                "gasto energia": 4700,
+                "energia solar": "Não",
+                "distribuicao funcionarios": "Majoritariamente remoto",
+                "vendas frete": 8820, 
+                "peso frete": 0,
+                "localizacao consumidor": 125, 
+                "co2 emitido": 100.024
+            }
+        }
+    ]
+}
