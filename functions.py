@@ -60,19 +60,27 @@ def remove_rs(num: str) -> list:
     except ValueError:
         return [num, False]
 
-def number_formatter(num: int) -> str:
+def number_formatter(num) -> str:
 
     count = 0
+    sum = 0
+
+    num2 = str(num).replace('.', ',')
 
     new_num = ''
 
-    for number in str(num)[::-1]:
+    for number in num2[::-1]:
 
         new_num += number
 
         count += 1
+
+        if number == ',':
+
+            count = 0
+            sum = 3
         
-        if count % 3 == 0 and count < len(str(num)):
+        if count % 3 == 0 and count != 0 and count + sum < len(str(num2)):
 
             new_num += '.'
 
@@ -548,8 +556,8 @@ def show_details_enterprise() -> bool:
     decorator_text('INFORMAÇÕES DA EMPRESA', '=', clean_screen=True)
 
     print(f'| Empresa: {info_interprise["nome"]}')
-    print(f'| Estado: {info_interprise["estado"]}\n')
-    print(f'| Cidade: {info_interprise["cidade"]}')
+    print(f'| Estado: {info_interprise["estado"]}')
+    print(f'| Cidade: {info_interprise["cidade"]}\n')
 
     decorator_text('dados da empresa', '=')
 
@@ -557,21 +565,21 @@ def show_details_enterprise() -> bool:
         
         if info.title() == 'Gasto Combustivel' or info.title() == 'Gasto Energia':
 
-            text = f'| {info.title()}: R$ {values[count]}'
+            text = f'| {info.title()}: R$ {number_formatter(values[count])}'
 
-            print(text.replace('.', ','))
+            print(text)
 
         elif info.title() == 'Localizacao Consumidor':
 
-            print(f'| {info.title()}: {values[count]}Km')
+            print(f'| {info.title()}: {number_formatter(values[count])}Km')
 
         elif info.title() == 'Peso Frete':
 
-            print(f'| {info.title()}: {values[count]}Kg')
+            print(f'| {info.title()}: {number_formatter(values[count])}Kg')
         
         elif info.title() == 'Co2 Emitido':
 
-            print(f'| {info.title()}: {values[count]:.2f}T')
+            print(f'| {info.title()}: {number_formatter(round(values[count]))}T')
 
         else:
 
@@ -640,24 +648,24 @@ def user_says_informations() -> bool:
 
     decorator_text('calculadora de Emissão de Carbono', '=', clean_screen=True)
 
-    total_annual_emission = annual_emission1 + annual_emission2 + annual_emission3
+    total_annual_emission = round(annual_emission1 + annual_emission2 + annual_emission3)
 
     min_value = round(total_annual_emission * 12)
     
     max_value = round(total_annual_emission * 365)
 
 
-    print(f'Sua pegada de carbono anual em Toneladas é de: {number_formatter(round(total_annual_emission))}')
+    print(f'Sua pegada de carbono anual em Toneladas é de: {number_formatter(total_annual_emission)}')
 
     print('\nUm Crédito de Carbono equivale a 1 Tonelada de Carbono.')
     
-    print(f'\nFazendo as contas, sua empresa terá que comprar {number_formatter(round(total_annual_emission))} Créditos.')
+    print(f'\nFazendo as contas, sua empresa terá que comprar {number_formatter(total_annual_emission)} Créditos.')
 
     print('\nO Crédito de Carbono no Brasil varia entre R$12,00 e R$365,00')
 
     print(f'\nSua empresa terá que gastar em créditos algo em torno de R${number_formatter(min_value)} e R${number_formatter(max_value)}')
 
-    input('\n\033[1;35mPressione enter para prosseguir... \033[m\n')
+    input('\n\033[1;35mPressione enter para prosseguir... \033[m')
 
     return False
 
