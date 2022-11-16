@@ -541,7 +541,7 @@ def show_details_enterprise() -> bool:
 
             break
     
-    if interprise_choiced == '0': 
+    if interprise_choiced == '0':
         
         return True
 
@@ -655,17 +655,17 @@ def user_says_informations() -> bool:
     max_value = round(total_annual_emission * 365)
 
 
-    print(f'Sua pegada de carbono anual em Toneladas é de: {number_formatter(total_annual_emission)}')
+    print(f'Sua pegada de carbono anual é de {number_formatter(total_annual_emission)} Toneladas')
 
     print('\nUm Crédito de Carbono equivale a 1 Tonelada de Carbono.')
     
-    print(f'\nFazendo as contas, sua empresa terá que comprar {number_formatter(total_annual_emission)} Créditos.')
+    print(f'\nLogo, sua empresa terá que comprar {number_formatter(total_annual_emission)} Créditos.')
 
     print('\nO Crédito de Carbono no Brasil varia entre R$12,00 e R$365,00')
 
-    print(f'\nSua empresa terá que gastar em créditos algo em torno de R${number_formatter(min_value)} e R${number_formatter(max_value)}')
+    print(f'\nSua empresa terá que gastar em torno de R${number_formatter(min_value)} e R${number_formatter(max_value)}')
 
-    input('\n\033[1;35mPressione enter para prosseguir... \033[m')
+    input('\n\033[1;35mPressione enter para prosseguir...\033[m')
 
     return False
 
