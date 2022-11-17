@@ -1,5 +1,6 @@
 import os
 import json
+from time import sleep
 from typing import List
 
 def clean() -> None:
@@ -714,6 +715,12 @@ def engine():
         
         if user_choice == '1': continue
 
-        print('\n\033[1;31mObrigado por usar este programa\033[m. \033[1;31mVolte sempre\033[m!')
+        text = '\n\033[1;31mObrigado por usar este programa\033[m. \033[1;31mVolte sempre\033[m!'
+        
+        for letter in text:
 
+            print(letter, end='')
+            sleep(0.0225)
+
+        print()
         break
