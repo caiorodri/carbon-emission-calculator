@@ -90,4 +90,4 @@ Após todo esse processo, vai aparacer a tela com a emissão anual da empresa do
 
 ### Finalização
 
-Caso o usuário escolha a opção sair, o programa vai ser finalizado aparecendo uma simples mensagem animada para o usuário.
+Caso o usuário escolha a opção "sair", o programa vai ser finalizado aparecendo uma simples mensagem animada para o usuário.
