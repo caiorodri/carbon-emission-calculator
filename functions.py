@@ -486,7 +486,6 @@ def check_location_consumers(deliveries: int, company_sector: str) -> float:
 [3] Em um estado vizinho (300km a 1000 km)
 
 [4] Em outra região do país (1000km a 2000 km)
-
 ''')
 
     while True:
@@ -666,7 +665,7 @@ def user_says_informations() -> bool:
 
     print('\nO Crédito de Carbono no Brasil varia entre R$12,00 e R$365,00')
 
-    print(f'\nSua empresa terá que gastar em torno de R${number_formatter(min_value)} e R${number_formatter(max_value)}')
+    print(f'\nSua empresa terá que gastar em torno de R${number_formatter(min_value)},00 e R${number_formatter(max_value)},00')
 
     input('\n\033[1;35mPressione enter para prosseguir...\033[m')
 
