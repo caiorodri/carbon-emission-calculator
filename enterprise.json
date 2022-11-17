@@ -15,7 +15,7 @@
                 "vendas frete": 100, 
                 "peso frete": 16000,
                 "localizacao consumidor": 25, 
-                "co2 emitido": 3000.504
+                "co2 emitido": 3001
             }
         },
         {
@@ -33,7 +33,7 @@
                 "vendas frete": 750, 
                 "peso frete": 0,
                 "localizacao consumidor": 125, 
-                "co2 emitido": 10224.823
+                "co2 emitido": 10225
             }
         },
         {
@@ -51,7 +51,7 @@
                 "vendas frete": 0, 
                 "peso frete": 0,
                 "localizacao consumidor": 0, 
-                "co2 emitido": 17.193
+                "co2 emitido": 17
             }
         },
         {
@@ -69,7 +69,7 @@
                 "vendas frete": 1500, 
                 "peso frete": 22000,
                 "localizacao consumidor": 125, 
-                "co2 emitido": 22582.588
+                "co2 emitido": 22583
             }
         },
         {
@@ -87,7 +87,7 @@
                 "vendas frete": 100, 
                 "peso frete": 0,
                 "localizacao consumidor": 25, 
-                "co2 emitido": 9.213
+                "co2 emitido": 9
             }
         },
         {
@@ -96,16 +96,16 @@
             "cidade": "Aracaju",
             "setor": "Serviços",
             "dados": {
-                "funcionarios": 100,
-                "gasto combustivel": 7150,
+                "funcionarios": 180,
+                "gasto combustivel": 29150,
                 "combustivel": "Diesel",
-                "gasto energia": 4700,
+                "gasto energia": 11000,
                 "energia solar": "Não",
-                "distribuicao funcionarios": "Majoritariamente remoto",
-                "vendas frete": 8820, 
+                "distribuicao funcionarios": "Hibrido",
+                "vendas frete": 3200, 
                 "peso frete": 0,
                 "localizacao consumidor": 125, 
-                "co2 emitido": 100.024
+                "co2 emitido": 178
             }
         }
     ]
