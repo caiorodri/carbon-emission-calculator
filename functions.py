@@ -134,7 +134,7 @@ def receive_company_sector() -> list:
         elif company_sector == '0' or company_sector == 'sair': 
             
             quit = True
-            company_sector = ''
+            company_sector = True
         
         else:
 
