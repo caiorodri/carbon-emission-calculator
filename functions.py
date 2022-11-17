@@ -283,6 +283,8 @@ def check_energy_expenditure(workers: int, sector: int) -> list:
             multiplier = 0
             break
     
+    if quit: return [0, quit]
+
     workers_emission, quit = calculate_distribution_workers(workers)
     
     energy_emission = avg_energy_bill * multiplier
@@ -359,7 +361,7 @@ Observação: considere aqui somente o frete entregue por uma empresa terceira (
         
         deliveries = input('\n\033[1;36mEscolha do Usuário:\033[m ').strip().lower()
 
-        if deliveries == '1' or deliveries == '0':
+        if deliveries == '1':
 
             deliveries = 0
             break
@@ -705,7 +707,7 @@ def engine():
             
                 result = user_says_informations()
 
-                if result: break
+                if result: continue
 
             if user_choice == '1':  # MOSTRANDO OS DADOS DA EMPRESA ESCOLHIDA PELO USUÁRIO
                 
