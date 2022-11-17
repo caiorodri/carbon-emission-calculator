@@ -671,11 +671,11 @@ def user_says_informations() -> bool:
 
 def user_only_sees() -> None:
 
-    decorator_text('calculadora de Pegada de Carbono', '=', clean_screen=True)
+    decorator_text('calculadora de Emissão de Carbono', '=', clean_screen=True)
     
     result = show_details_enterprise()
 
-    if not result: input('\nPressione enter para continuar...')
+    if not result: input('\n\033[1;35mPressione enter para continuar...\033[m')
 
 def engine():
 
@@ -683,7 +683,7 @@ def engine():
 
         while True:
 
-            decorator_text('calculadora de Pegada de Carbono', '=', clean_screen=True)
+            decorator_text('calculadora de Emissão de Carbono', '=', clean_screen=True)
 
             user_choice = input('''Escolha uma das opções abaixo
 
