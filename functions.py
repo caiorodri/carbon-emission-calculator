@@ -247,7 +247,7 @@ def check_energy_expenditure(workers: int, sector: int) -> list:
 
     while True:
 
-        solar_energy = input('\n\033[1;36mEscolha do Usuário:\033[m ').strip().lower().replace('ã', 'a')
+        solar_energy = input('\033[1;36mEscolha do Usuário:\033[m ').strip().lower().replace('ã', 'a')
 
         if solar_energy == '1' or solar_energy =='nao':
 
@@ -312,7 +312,7 @@ def calculate_distribution_workers(workers: int) -> list:
 
     while True:
 
-        distribution_workers = input('\n\033[1;36mEscolha do Usuário:\033[m ').strip().lower().replace('í', 'i')
+        distribution_workers = input('\033[1;36mEscolha do Usuário:\033[m ').strip().lower().replace('í', 'i')
 
         if distribution_workers == '1' or distribution_workers == 'majoritariamente presencial':
 
