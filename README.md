@@ -84,7 +84,7 @@ Se o setor da empresa do usuário for "Industria" ou "Outro", ele terá que pass
 
 ### Resultado
 
-Após todo esse processo, vai aparacer a tela com a emissão anual da empresa do usuário
+Após todo esse processo, vai aparacer a tela com a emissão anual da empresa do usuário, com algumas informações sobre o crédito de carbono.
 
 ![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_resultado_final.png)
 
