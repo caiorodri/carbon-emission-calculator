@@ -78,7 +78,7 @@ Após isso, o usuário irá escolher uma das opções para a distancia da maiori
 
 ![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_consumidores.png)
 
-Se o setor da empresa do usuário for "Industria" ou "Outro", ele terá que passar o peso médio do pacote enviado
+Se o setor da empresa do usuário for "Industria" ou "Outro", ele terá que passar o peso médio do pacote enviado para entrega
 
 ![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_peso_frete.png)
 
