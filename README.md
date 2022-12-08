@@ -50,6 +50,15 @@ Depois que o usuário digitar o gasto mensal de combustivel da empresa, ele vai 
 
 ![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_combustivel.png)
 
+Dependendo da opção que o Usuário escolher, o multiplicador recebe um valor diferente
+
+- Diesel = 0.0042
+- Gasolina = 0.003504
+- Etanol = 0.000024
+- Gás Natural = 0.006708
+
+Esse valor será usado para multiplicar o gasto mensal da empresa e guardado dentro da variavel "annual_issue1"
+
 ### Energia
 
 Assim como fez com o combustivel, o usuário terá que fazer com energia também.
@@ -60,11 +69,31 @@ E depois, escolher uma das opções relacionadas ao uso de energia solar.
 
 ![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_energia_solar.png)
 
+Opção 1 ( Não )
+- Se for indústria ou "Outro" = 0.002424
+- Senão = 0.002136
+
+Opção 2 ( Sim, compro a minha energia de uma fazenda solar )
+- Se for indústria ou "Outro" = 0.000936
+- Senão = 0.000816
+
+Opção 3 ( Sim, além de consumir da rede, faço geração própria )
+- Se for indústria ou "Outro" = 0.004728
+- Senão = 0.004164
+
+Esse valor será usado para multiplicar o gasto de energia e guardado dentro da variavel "annual_issue2"
+
 ### Distribuição de funcionarios
 
 O usuário irá escolher uma das opções sobre a distribuição dos funcionarios na empresa
 
 ![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_distribuicao_funcionarios.png)
+
+- Majoritariamente Presencial = 0
+- Hibrído = 0.1
+- Majoritariamente Remoto = 0.2
+
+Esse valor será usado para multiplicar a quantidade de funcionarios na empresa
 
 ### Entregas
 
@@ -78,6 +107,30 @@ Após isso, o usuário irá escolher uma das opções para a distancia da maiori
 
 ![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_consumidores.png)
 
+Se a Empresa for do Setor "Indústria" ou "Outro", será necessário fazer duas contas, então precisará de dois multiplicadores, se não for, precisará de apenas 1
+
+Perto do Meu Município
+- Se for Industria ou "Outro" = Multiplicador1 = 0.00432, Multiplicador2 = 0.000171
+- Senão Multiplicador1 = 0.0044055 
+
+Dentro do Meu Estado
+- Se for Industria ou "Outro", Multiplicador1 = 0.00432, Multiplicador2 = 0.00042
+- Senão Multiplicador1 = 0.00453
+
+Em um Estado Vizinho
+- Se for Industria ou "Outro", Multiplicador1 = 0.00432, Multiplicador2 = 0.00156
+- Senão Multiplicador1 = 0.0051 
+
+Em Outra Região do País
+- Se for Industria ou "Outro", Multiplicador1 = 0.00432, Multiplicador2 = 0.0036
+- Senão Multiplicador1 = 0.00612 
+
+O Multiplicador1 será usado para multiplicar a quantidade de entregas feita pela empresa
+
+O Multiplicador2 será usado para multiplicar o peso da entrega e depois multiplicar pela quantidade de entregas feitas pela empresa, depois somar com o resultado do Multiplicador1 * quantidade de entregas feitas pela empresa
+
+O resultado será guardado dentro da variavel "annual_issue3"
+
 Se o setor da empresa do usuário for "Industria" ou "Outro", ele terá que passar o peso médio do pacote enviado para entrega (Caso contrario, o peso médio fica como 0)
 
 ![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_peso_frete.png)
@@ -85,6 +138,8 @@ Se o setor da empresa do usuário for "Industria" ou "Outro", ele terá que pass
 ### Resultado
 
 Após todo esse processo, vai aparacer a tela com a emissão anual da empresa do usuário, com algumas informações sobre o crédito de carbono.
+
+A emissão anual final, será a soma das três variaveis, "annual_issue1", "annual_issue2", "annual_issue3"
 
 ![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_resultado_final.png)
 
