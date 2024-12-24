@@ -97,7 +97,7 @@ Esse valor será usado para multiplicar a quantidade de funcionarios na empresa
 
 ### Entregas
 
-A proxima informação é ser passada pelo usuário é q quantidade de entregas realizadas pela empresa
+A proxima informação é ser passada pelo usuário é a quantidade de entregas realizadas pela empresa
 
 ![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_vendas_frete.png)
 
