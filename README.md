@@ -1,148 +1,146 @@
-# Carbon Emission Calculator
- Calculadora de Emissão de Carbono criada para uma Atividade Pratica Supervisionada (APS) da faculdade de Ciências de Computação
+# Carbon Emission Calculator  
 
-A calculadora de emissão de carbono foi feita especificamente para empresas
+Calculadora de Emissão de Carbono desenvolvida para uma Atividade Prática Supervisionada (APS) no curso de Ciência da Computação.  
 
-## Passo a Passo
+A ferramenta foi projetada especificamente para empresas que desejam calcular e monitorar suas emissões anuais de carbono.  
 
-### Inicialização do Programa
+## Passo a Passo  
 
-Quando iniciado o programa, o usuário tem a escolha de ver os dados de empresas já cadastradas em um arquivo JSON, passar as informações e ver o quanto a empresa dele emitiu no ano, ou encerrar o programa.
+### Inicialização do Programa  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_inicial.png)
+Ao iniciar o programa, o usuário pode:  
+- Visualizar os dados de empresas cadastradas em um arquivo JSON;  
+- Inserir informações da própria empresa para calcular suas emissões anuais de carbono;  
+- Encerrar o programa.  
 
-### Escolha da Empresa
+![Tela Inicial](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_inicial.png)  
 
-Caso o Usuário escolha ver as empresas já cadastradas, uma tela com todas as empresas que tem no arquivo JSON irá aparecer seguindo um padrão definido pelo criador.
+### Escolha da Empresa  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_empresas.png)
+Caso o usuário opte por visualizar as empresas cadastradas, será exibida uma lista contendo todas as empresas armazenadas no arquivo JSON, seguindo um padrão predefinido.  
 
-### Dados da Empresa Escolhida pelo Usuário
+![Tela Empresas](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_empresas.png)  
 
-Após o usuário escolher a empresa, todos os dados da empresa irão aparecer. Quase todas as informações que aparecem, são as mesmas que o usuário tem que passar caso escolha ver a emissão da própria empresa.
+### Dados da Empresa Selecionada  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_dados_empresa.png)
+Após a escolha da empresa, todas as suas informações serão exibidas. Essas informações são praticamente as mesmas que o usuário precisará fornecer caso decida calcular a emissão de carbono da própria empresa.  
 
-Após o usuário pressionar enter, ele voltará para a tela inicial (A primeira imagem deste README).
+![Tela Dados da Empresa](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_dados_empresa.png)  
 
-### Setor da Empresa
+Após pressionar "Enter", o usuário será redirecionado para a tela inicial.  
 
-A primeira informação que o usuário terá que passar é o setor da empresa.
+### Setor da Empresa  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_setor_empresa.png)
+A primeira informação solicitada é o setor de atuação da empresa.  
 
-O usuário pode digitar a opção em que o setor está, ou o nome do setor.
-Se o Usuário digitar "0" ou "sair" , ele será redirecionado para a tela inicial.
+![Tela Setor da Empresa](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_setor_empresa.png)  
 
-### Funcionarios
+O usuário pode inserir o número correspondente à opção desejada ou digitar o nome do setor. Caso digite "0" ou "sair", retornará à tela inicial.  
 
-Após o usuário escolher o setor da empresa, ele terá que digitar quantos funcionarios trabalham na empresa dele.
+### Funcionários  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_funcionarios.png)
+Em seguida, o usuário deverá informar a quantidade de funcionários que trabalham na empresa.  
 
-### Combustivel
+![Tela Funcionários](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_funcionarios.png)  
 
-O usuário terá que digitar o gasto mensal de combustivel da empresa
+### Consumo de Combustível  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_gasto_combustivel.png)
+O usuário deverá inserir o gasto mensal com combustível da empresa.  
 
-Depois que o usuário digitar o gasto mensal de combustivel da empresa, ele vai ter que escolher o principal combustivel usado pela empresa.
+![Tela Gasto Combustível](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_gasto_combustivel.png)  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_combustivel.png)
+Em seguida, será necessário selecionar o principal tipo de combustível utilizado.  
 
-Dependendo da opção que o Usuário escolher, o multiplicador recebe um valor diferente
+![Tela Escolha do Combustível](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_combustivel.png)  
 
-- Diesel = 0.0042
-- Gasolina = 0.003504
-- Etanol = 0.000024
-- Gás Natural = 0.006708
+Cada tipo de combustível possui um fator de emissão diferente:  
 
-Esse valor será usado para multiplicar o gasto mensal da empresa e guardado dentro da variavel "annual_issue1"
+- **Diesel** = 0.0042  
+- **Gasolina** = 0.003504  
+- **Etanol** = 0.000024  
+- **Gás Natural** = 0.006708  
 
-### Energia
+Esse fator será utilizado para calcular as emissões e armazenado na variável `annual_issue1`.  
 
-Assim como fez com o combustivel, o usuário terá que fazer com energia também.
+### Consumo de Energia  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_gasto_energia.png)
+O usuário também deverá inserir o gasto mensal com energia elétrica.  
 
-E depois, escolher uma das opções relacionadas ao uso de energia solar.
+![Tela Gasto Energia](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_gasto_energia.png)  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_energia_solar.png)
+Em seguida, deve informar se a empresa utiliza energia solar.  
 
-Opção 1 ( Não )
-- Se for indústria ou "Outro" = 0.002424
-- Senão = 0.002136
+![Tela Energia Solar](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_energia_solar.png)  
 
-Opção 2 ( Sim, compro a minha energia de uma fazenda solar )
-- Se for indústria ou "Outro" = 0.000936
-- Senão = 0.000816
+Os multiplicadores variam conforme a escolha:  
 
-Opção 3 ( Sim, além de consumir da rede, faço geração própria )
-- Se for indústria ou "Outro" = 0.004728
-- Senão = 0.004164
+**Opção 1 (Não utiliza energia solar)**  
+- Indústria/Outro: **0.002424**  
+- Outros setores: **0.002136**  
 
-Esse valor será usado para multiplicar o gasto de energia e guardado dentro da variavel "annual_issue2"
+**Opção 2 (Compra energia de uma fazenda solar)**  
+- Indústria/Outro: **0.000936**  
+- Outros setores: **0.000816**  
 
-### Distribuição de funcionarios
+**Opção 3 (Utiliza geração própria, além da rede elétrica)**  
+- Indústria/Outro: **0.004728**  
+- Outros setores: **0.004164**  
 
-O usuário irá escolher uma das opções sobre a distribuição dos funcionarios na empresa
+O fator correspondente será multiplicado pelo consumo de energia e armazenado na variável `annual_issue2`.  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_distribuicao_funcionarios.png)
+### Modelo de Trabalho  
 
-- Majoritariamente Presencial = 0
-- Hibrído = 0.1
-- Majoritariamente Remoto = 0.2
+O usuário deve selecionar a opção que melhor representa o modelo de trabalho da empresa.  
 
-Esse valor será usado para multiplicar a quantidade de funcionarios na empresa
+![Tela Distribuição Funcionários](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_distribuicao_funcionarios.png)  
 
-### Entregas
+Cada modelo possui um fator de impacto:  
 
-A proxima informação é ser passada pelo usuário é a quantidade de entregas realizadas pela empresa
+- **Majoritariamente Presencial** = 0  
+- **Híbrido** = 0.1  
+- **Majoritariamente Remoto** = 0.2  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_vendas_frete.png)
+Esse valor será multiplicado pelo número de funcionários da empresa.  
 
-O usuário tem opções ou pode digitar a quantidade após escolher a opção "Outros"
+### Entregas  
 
-Após isso, o usuário irá escolher uma das opções para a distancia da maioria dos consumidores
+A próxima etapa envolve o número de entregas realizadas pela empresa.  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_consumidores.png)
+![Tela Vendas e Frete](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_vendas_frete.png)  
 
-Se a Empresa for do Setor "Indústria" ou "Outro", será necessário fazer duas contas, então precisará de dois multiplicadores, se não for, precisará de apenas 1
+O usuário pode selecionar uma opção predefinida ou inserir manualmente a quantidade de entregas na opção "Outros".  
 
-Perto do Meu Município
-- Se for Industria ou "Outro" = Multiplicador1 = 0.00432, Multiplicador2 = 0.000171
-- Senão Multiplicador1 = 0.0044055 
+Em seguida, será necessário indicar a localização da maioria dos consumidores.  
 
-Dentro do Meu Estado
-- Se for Industria ou "Outro", Multiplicador1 = 0.00432, Multiplicador2 = 0.00042
-- Senão Multiplicador1 = 0.00453
+![Tela Consumidores](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_consumidores.png)  
 
-Em um Estado Vizinho
-- Se for Industria ou "Outro", Multiplicador1 = 0.00432, Multiplicador2 = 0.00156
-- Senão Multiplicador1 = 0.0051 
+Os multiplicadores variam conforme a localização e setor da empresa:  
 
-Em Outra Região do País
-- Se for Industria ou "Outro", Multiplicador1 = 0.00432, Multiplicador2 = 0.0036
-- Senão Multiplicador1 = 0.00612 
+| Localização dos Consumidores  | Indústria/Outro (Multiplicador 1) | Indústria/Outro (Multiplicador 2) | Outros setores |
+|------------------------------|----------------------------------|----------------------------------|----------------|
+| **Próximo ao município**      | 0.00432                         | 0.000171                         | 0.0044055       |
+| **Dentro do estado**          | 0.00432                         | 0.00042                          | 0.00453        |
+| **Em estado vizinho**         | 0.00432                         | 0.00156                          | 0.0051         |
+| **Outra região do país**      | 0.00432                         | 0.0036                           | 0.00612        |
 
-O Multiplicador1 será usado para multiplicar a quantidade de entregas feita pela empresa
+- **Multiplicador 1**: Usado para calcular o impacto das entregas.  
+- **Multiplicador 2**: Aplicado apenas para empresas do setor "Indústria" ou "Outro", considerando também o peso médio do pacote.  
 
-O Multiplicador2 será usado para multiplicar o peso da entrega e depois multiplicar pela quantidade de entregas feitas pela empresa, depois somar com o resultado do Multiplicador1 * quantidade de entregas feitas pela empresa
+Caso necessário, o usuário deverá informar o peso médio dos pacotes enviados.  
 
-O resultado será guardado dentro da variavel "annual_issue3"
+![Tela Peso Frete](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_peso_frete.png)  
 
-Se o setor da empresa do usuário for "Industria" ou "Outro", ele terá que passar o peso médio do pacote enviado para entrega (Caso contrario, o peso médio fica como 0)
+A variável `annual_issue3` armazenará o resultado desse cálculo.  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_peso_frete.png)
+### Resultado Final  
 
-### Resultado
+Ao concluir todas as etapas, será exibido o resultado final com a emissão anual da empresa e informações sobre créditos de carbono.  
 
-Após todo esse processo, vai aparacer a tela com a emissão anual da empresa do usuário, com algumas informações sobre o crédito de carbono.
+A emissão total será calculada somando:  
+`annual_issue1 + annual_issue2 + annual_issue3`  
 
-A emissão anual final, será a soma das três variaveis, "annual_issue1", "annual_issue2", "annual_issue3"
+![Tela Resultado Final](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_resultado_final.png)  
 
-![alt text](https://github.com/caiorodri/CarbonEmissionCalculator/blob/main/images/tela_resultado_final.png)
+### Finalização  
 
-### Finalização
-
-Caso o usuário escolha a opção "sair", o programa vai ser finalizado aparecendo uma simples mensagem animada para o usuário.
+Se o usuário optar por encerrar o programa, será exibida uma mensagem animada de despedida.  
